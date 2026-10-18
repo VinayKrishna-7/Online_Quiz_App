@@ -1,0 +1,127 @@
+.take-quiz-page {
+  background-color: var(--bg-main);
+  min-height: calc(100vh - 68px);
+}
+
+.take-quiz-header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 68px;
+  z-index: 40;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.quiz-title-header {
+  font-size: 1.25rem;
+  color: var(--text-main);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+}
+
+.take-quiz-content {
+  padding: 2rem 1.5rem 4rem;
+}
+
+.quiz-stage-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.question-card {
+  padding: 2rem;
+}
+
+.question-card-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.question-text {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+}
+
+.options-container {
+  display: flex;
+}
+
+.option-card {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background-color: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  text-align: left;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.option-card:hover:not(:disabled) {
+  border-color: var(--primary-border);
+  background-color: var(--primary-light);
+}
+
+.option-card.option-selected {
+  border-color: var(--primary);
+  background-color: var(--primary-light);
+  box-shadow: 0 0 0 1px var(--primary);
+}
+
+.option-letter-box {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.letter-selected {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+.option-text {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-main);
+  line-height: 1.4;
+}
+
+.question-card-footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 900px) {
+  .quiz-stage-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-sidebar {
+    order: 2;
+  }
+
+  .quiz-title-header {
+    max-width: 220px;
+    font-size: 1.05rem;
+  }
+}

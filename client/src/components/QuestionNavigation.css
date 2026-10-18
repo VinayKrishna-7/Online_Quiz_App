@@ -1,0 +1,82 @@
+.qnav-card {
+  padding: 1.25rem;
+}
+
+.qnav-header {
+  margin-bottom: 1rem;
+}
+
+.qnav-title {
+  font-size: 0.9375rem;
+  color: var(--text-main);
+}
+
+.qnav-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.qnav-btn {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  transition: all 0.15s ease;
+  background-color: var(--bg-card);
+  color: var(--text-muted);
+}
+
+.qnav-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.qnav-btn-current {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.4);
+}
+
+.qnav-btn-answered {
+  background-color: var(--success-light);
+  border-color: var(--success-border);
+  color: var(--success-text);
+}
+
+.qnav-btn-unanswered {
+  background-color: var(--bg-subtle);
+  border-color: var(--border);
+}
+
+.qnav-check-icon {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.legend-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend-current {
+  background-color: var(--primary);
+}
+
+.legend-answered {
+  background-color: var(--success);
+}
+
+.legend-unanswered {
+  background-color: var(--border);
+}

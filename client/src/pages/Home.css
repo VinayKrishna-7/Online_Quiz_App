@@ -1,0 +1,65 @@
+.home-header-section {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding: 3.5rem 0 3rem;
+}
+
+.home-header-content {
+  max-width: 680px;
+}
+
+.home-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.home-subtitle {
+  color: var(--text-muted);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+}
+
+.home-actions {
+  display: flex;
+}
+
+.home-quizzes-section {
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.category-pill {
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background-color: var(--bg-card);
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.category-pill:hover {
+  border-color: var(--primary-border);
+  color: var(--text-main);
+}
+
+.category-pill.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .home-header-section {
+    padding: 2.5rem 0 2rem;
+  }
+  .home-title {
+    font-size: 1.75rem;
+  }
+}
